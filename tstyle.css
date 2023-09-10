@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgb(26, 33, 60);
+    
+}
+
+#name {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    opacity: 0;
+    border-radius: 5px;
+    border: 3px solid rgb(245, 128, 128);
+    padding: 0px 5px;
+    font-size: 1.5rem;
+
+}
+
+
+#trendy {
+    background-color: rgb(26, 33, 60);
+    padding: 0 50px;
+    color: red; /* Text color changed to red */
+    text-shadow: 5px 0 10px rgba(245, 128, 128, 0.7); /* Added left offset for shadow */
+}
+
+
+
+
+    @keyframes glow {
+        0% {
+            box-shadow: 0 0 5px rgba(245, 128, 128, 0.7);
+        }
+        100% {
+            box-shadow: 0 0 20px rgba(245, 128, 128, 0.9);
+        }
+    }
+
+
+svg path {
+    cursor: pointer;
+}
+
+#preloader{
+    background: #000 url(loader.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
